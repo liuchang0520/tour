@@ -27,7 +27,13 @@ value('tableOfContents', [{
     'title': 'Concurrency',
     'description': '<p>Go provides concurrency features as part of the core language.</p><p>This module goes over goroutines and channels, and how they are used to implement different concurrency patterns.</p>',
     'lessons': ['concurrency']
-}]).
+}, {
+    'id': 'grab',
+    'title': 'Grab Challenges',
+    'description': '<p>A bunch of Grab Go challenges.</p>',
+    'lessons': ['grab']
+}
+]).
 
 // translation
 value('translation', {
@@ -164,4 +170,8 @@ value('mapping', {
     '#71': '/concurrency/8', // Exercise: Equivalent Binary Trees
     '#72': '/concurrency/9', // Exercise: Web Crawler
     '#73': '/concurrency/10', // Where to Go from here...
+    '#74': '/grab/1', // Pointers
+    '#75': '/grab/2', // Interfaces
+    '#76': '/grab/3', // Format
+    '#77': '/grab/4', // Closures 
 });
