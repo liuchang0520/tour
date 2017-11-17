@@ -13,7 +13,9 @@ Question: shall we do that for always?
 
 * Interfaces
 
-What is an interface really?
+What is a golang interface really?
+
+.play grab/interfaces.go
 
 * Format Performance
 
@@ -24,7 +26,8 @@ Let's compare what is the best of them!
 
 * Closures
 
-Look out for closures!
+We use closures.
+There are things to watch out when dealing with closures in Go.
 
 .play grab/closure.go
 
