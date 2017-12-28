@@ -5,8 +5,14 @@ import (
 	"time"
 )
 
+const (
+	// You shouldn't change const
+	waitTime      = 5 * time.Millisecond
+	consumingTime = 500 * time.Millisecond
+)
+
 func potentiallyTimeConsumingCall(result chan struct{}) {
-	<-time.After(10 * time.Millisecond)
+	<-time.After(consumingTime)
 	result <- struct{}{}
 }
 
@@ -16,7 +22,7 @@ func main() {
 		go potentiallyTimeConsumingCall(r)
 		select {
 		case <-r:
-		case <-time.After(5 * time.Millisecond):
+		case <-time.After(waitTime):
 		}
 	}
 
